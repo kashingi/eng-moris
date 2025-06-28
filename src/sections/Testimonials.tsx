@@ -29,7 +29,7 @@ const Testimonials: React.FC = () => {
     
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 5000);
+    }, 25000);
     
     return () => clearInterval(interval);
   }, [isAutoPlaying]);

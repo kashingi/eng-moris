@@ -1,5 +1,4 @@
-import { FigmaIcon, GithubIcon, CodeIcon, DatabaseIcon, ServerIcon, BrainCircuitIcon, BookIcon, PencilRulerIcon, LinkedinIcon, MailIcon, PhoneIcon } from 'lucide-react';
-import type { IconType } from '../types';
+import { GithubIcon, CodeIcon, DatabaseIcon, ServerIcon, BrainCircuitIcon, BookIcon, PencilRulerIcon, LinkedinIcon, PhoneIcon , TabletSmartphoneIcon } from 'lucide-react';
 
 export const personalInfo = {
   name: "Morris Kashingi",
@@ -87,7 +86,7 @@ export const projects = [
   {
     title: "Teller Automation System",
     category: "Banking",
-    description: "Developed a bank solution to improve teller efficiency, reduce customer waiting time, and enhance access to banking services. Achieved 80% improvement in operational efficiency.",
+    description: "A bank solution to improve teller efficiency, reduce customer waiting time, and enhance access to banking services. Achieved 80% improvement in operational efficiency.",
     image: "https://images.pexels.com/photos/7567529/pexels-photo-7567529.jpeg",
     technologies: ["Angular", "Java Spring Boot", "MySQL", "REST APIs"],
     link: "https://github.com/emtech-repo/Teller-Automation.git",
@@ -96,7 +95,7 @@ export const projects = [
   {
     title: "Kanisa App",
     category: "Church Management",
-    description: "Developed a comprehensive church management system enabling efficient member management, financial tracking, and service organization. Includes reporting and analytics features.",
+    description: "A comprehensive church management system enabling efficient member management, financial tracking, and service organization. Includes reporting and analytics features.",
     image: "https://images.pexels.com/photos/236339/pexels-photo-236339.jpeg",
     technologies: ["Angular", "Spring Boot", "Bootstrap", "MySQL"],
     link: "https://caritas-kanisa.emtechhouse.co.ke:8907",
@@ -114,7 +113,7 @@ export const projects = [
   {
     title: "MSME Banking Solution",
     category: "Banking",
-    description: "Developed banking services solution for ABSA bank's MSME clients, improving access to financial services for small businesses.",
+    description: "A robust banking services solution for bank's MSME clients, improving access to financial services for small businesses.",
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
     technologies: ["Angular", "Java Spring Boot", "PostgreSQL", "REST APIs"],
     link: "https://ecosystem.emtechhouse.co.ke:4015",
@@ -126,7 +125,7 @@ export const projects = [
     description: "A comprehensive cafe management system for streamlining operations, order management, and inventory control.",
     image: "https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg",
     technologies: ["Java Spring Boot", "Angular", "Bootstrap", "Angular Material"],
-    link: "https://github.com/kashingi/CafeFrontend.git",
+    link: "https://cafe-frontend-eljb.vercel.app/",
     featured: false
   },
   {
@@ -135,7 +134,7 @@ export const projects = [
     description: "Full-featured e-commerce platform with product management, shopping cart, and secure payment integration.",
     image: "https://images.pexels.com/photos/34577/pexels-photo.jpg",
     technologies: ["Java Spring Boot", "Angular", "Bootstrap", "Angular Material"],
-    link: "https://github.com/kashingi/E-Frontend.git",
+    link: "https://ecommerce-lake-delta.vercel.app/",
     featured: false
   },
   {
@@ -151,33 +150,33 @@ export const projects = [
 
 export const testimonials = [
   {
-    name: "Fredrick Agesa Bulungu",
-    role: "Operations Manager, Equity Bank KE",
+    name: "Kalama Antomy",
+    role: "HR Assistant, Equity Group Holdings PLC",
     content: "Morris demonstrated exceptional skills in digital banking implementation and customer service. His technical expertise and ability to explain complex systems to customers made him an invaluable team member.",
-    avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+    avatar: "https://id-preview--194e2209-3e0e-4058-bfad-3adcab9537fc.lovable.app/lovable-uploads/182dd3d0-17dd-41b3-a37c-92f9e45b9961.png"
   },
   {
     name: "Susan Kamau",
     role: "Assistant Principal, PLP Academy",
     content: "Morris excelled as a software development trainer, effectively teaching complex concepts and inspiring students. His practical approach to teaching the MERN stack and integration of real-world applications like M-Pesa made the content highly relevant.",
-    avatar: "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg"
+    avatar: "https://ci3.googleusercontent.com/mail-sig/AIorK4yhsrqNQUzdumMnLi8Cxcy3bRnnbdvjZ6dKfcO30W2ayFT2cBexbLOzfZVI1o5uoD0mdtUDhaCeOvWm"
   }
 ];
 
 export const services = [
   {
     title: "Full-Stack Development",
-    description: "End-to-end development using Angular, React, Spring Boot, and Laravel with focus on scalable and maintainable solutions.",
+    description: "End-to-end development using Angular, React, Boostrap, Java spring Boot, Node.js with express framework and PHP Laravel with focus on scalable and maintainable solutions.",
     icon: CodeIcon
   },
   {
     title: "Mobile Development",
     description: "Cross-platform mobile application development using Flutter/Dart and Swift.",
-    icon: PhoneIcon
+    icon: TabletSmartphoneIcon
   },
   {
     title: "Technical Training",
-    description: "Comprehensive software development training and mentorship in web technologies and MERN stack.",
+    description: "Comprehensive software development training and mentorship in web technologies and MERN stack and digital skills.",
     icon: BookIcon
   },
   {
@@ -200,23 +199,23 @@ export const services = [
 export const experience = [
   {
     role: "Software Developer",
-    company: "Emtech House",
-    period: "2022 - Present",
-    description: "Lead developer for multiple banking and financial technology solutions. Developed and maintained core banking systems, digital banking platforms, and financial management tools. Implemented secure payment integrations and real-time transaction processing systems.",
-    technologies: ["Angular", "Java Spring Boot", "MySQL", "REST APIs", "PostgreSQL"]
+    company: "E&M Technology House",
+    period: "Jan 2023 - Dec 2024",
+    description: "Dynamic and responsive UI / UX design and implementation, developing and maintaining robust back-end services and APIs, and database design and implementation",
+    technologies: ["Angular", "Bootstrap", "TypeScript", "Bootstrap", "Angular Material", "Java Spring Boot", "MySQL", "REST APIs", "MongoDB"]
   },
   {
     role: "Software Development Trainer",
     company: "PLP Academy",
-    period: "2021 - 2022",
-    description: "Conducted comprehensive software development training programs focusing on web technologies and mobile development. Created and delivered curriculum covering MERN stack, Flutter, and system integration with M-Pesa.",
-    technologies: ["MERN Stack", "Flutter", "M-Pesa Integration", "Git", "Agile Methodologies"]
+    period: "Oct 2023 - Feb 2024",
+    description: "Trained leaners on web technologies, full stack web developmemnt with MERN (MongoDB, Express, React, and Node.js), and Lipa na M-Pesa integration", 
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js","Express framework","MongoDB", " React Js", "Node.js", "Daraja API", "Git"]
   },
   {
     role: "Digital Banking Officer",
     company: "Equity Bank",
-    period: "2020 - 2021",
-    description: "Implemented digital banking solutions and provided technical support for banking systems. Trained staff and customers on digital banking platforms and ensured smooth operation of banking software.",
-    technologies: ["Core Banking Systems", "Digital Banking Platforms", "Customer Service", "Technical Support"]
+    period: "October 20202 - May 2023",
+    description: "Promoted digitization and digital banking channels. Onboarded customers on digital banking products. Educated customers on how to use digital banking products to prevent fraud.",
+    technologies: ["Equitel", "*247#", "Equity Mobile", "Equity Online"]
   }
 ];

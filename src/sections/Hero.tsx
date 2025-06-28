@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { personalInfo } from "../constants/data";
 import Button from "../components/Button";
 import { ArrowDownCircle } from "lucide-react";
+import profileImage from "../assets/Kashingi.jpg";
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState("");
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const roles = [
-    
+    "Software Developer",
     "Frontend Developer",
-    "Backend Developer",
     "Angular Developer",
     "React Developer",
     "Database Designer",
@@ -51,37 +51,56 @@ const Hero: React.FC = () => {
         <div className="absolute top-[60%] -left-[5%] w-[30%] h-[30%] bg-purple-500 rounded-full blur-[120px]"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 mt-20 md:mt-0">
-        {/* Content Section */}
-        <div className="text-center md:text-center">
-          <p className="text-blue-400 font-medium mb-3 animated fadeIn">
-            {personalInfo.title}
-          </p>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animated fadeInUp">
+      <div className="container mx-auto px-4 relative z-10 mt-20 md:mt-15">
+        {/* Title and Subtitle - Centered */}
+        <div className="text-center mb-8 animated fadeIn">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white animated fadeInUp">
             Hi, I'm {personalInfo.name}
           </h1>
-          <div className="h-8 md:h-12">
-            <h1 className="text-xl md:text-3xl text-gray-300 font-light mb-8 min-h-8 typed-text animated fadeIn delay-500">
-              {typedText}
-              <span className="animate-pulse">|</span>
-            </h1>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Content Section - Left Side */}
+          <div className="lg:col-span-8 text-center lg:text-center">
+            <div className="h-8 md:h-12 mb-6">
+              <h2 className="text-xl md:text-3xl text-gray-300 font-light min-h-8 typed-text animated fadeIn delay-500">
+                {typedText}
+                <span className="animate-pulse">|</span>
+              </h2>
+            </div>
+            <p className="text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0 animated fadeIn delay-700 lg:text-end">
+              {personalInfo.description}
+            </p>
+            <div className="space-x-4 animated fadeInUp delay-1000">
+              <Button
+                variant="primary"
+                size="sm"
+                href="#contact"
+                as="a"
+                className="animated pulseEffect"
+              >
+                Let's Work Together
+              </Button>
+              <Button variant="outline" size="sm" href="#projects" as="a">
+                View My Work
+              </Button>
+            </div>
           </div>
-          <p className="text-gray-300 mb-10 w-2xl animated fadeIn delay-700">
-            {personalInfo.description}
-          </p>
-          <div className="space-x-4 animated fadeInUp delay-1000">
-            <Button
-              variant="primary"
-              size="sm"
-              href="#contact"
-              as="a"
-              className="animated pulseEffect"
-            >
-              Let's Work Together
-            </Button>
-            <Button variant="outline" size="sm" href="#projects" as="a">
-              View My Work
-            </Button>
+
+          {/* Profile Photo Section - Right Side */}
+          <div className="lg:col-span-4 flex flex-col items-center animated fadeIn delay-300">
+            <div className="relative mb-4">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl">
+                <img
+                  src={profileImage}
+                  alt="Morris Kashingi"
+                  className="w-4/3 h-4/3 object-cover"
+                />
+              </div>
+              {/* Decorative ring */}
+              <div className="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-30 animate-pulse"></div>
+            </div>
           </div>
         </div>
 
