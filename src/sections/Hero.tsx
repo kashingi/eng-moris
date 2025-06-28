@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
             <div className="relative mb-4">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl">
                 <img
-                  src={profileImage}
+                  src="https://id-preview--194e2209-3e0e-4058-bfad-3adcab9537fc.lovable.app/lovable-uploads/ce5d6a8a-0d25-4cc2-9394-fad3f702c1fb.png"
                   alt="Morris Kashingi"
                   className="w-4/3 h-4/3 object-cover"
                 />
